@@ -1,3 +1,51 @@
+-- -----------------------------------------------------
+-- Table [SEL].[Leagues]
+-- -----------------------------------------------------
+CREATE TABLE [Leagues] (
+  [League_ID] INT NOT NULL,
+  [LeagueName] VARCHAR(45) NOT NULL,
+  [LeagueReferee] VARCHAR(45) NOT NULL,
+  PRIMARY KEY ([League_ID]),
+  INDEX [League_ID_UNIQUE] ([League_ID] ASC))
+  
+  -- -----------------------------------------------------
+-- Table [SEL].[Roles]
+-- -----------------------------------------------------
+CREATE TABLE [Roles] (
+  [Role_ID] INT NOT NULL,
+  [RoleName] VARCHAR(45) NOT NULL,
+  PRIMARY KEY ([Role_ID]),
+  INDEX [Role_ID_UNIQUE] ([Role_ID] ASC),
+  INDEX [RoleName_UNIQUE] ([RoleName] ASC))
+
+-- -----------------------------------------------------
+-- Table [SEL].[Games]
+-- -----------------------------------------------------
+CREATE TABLE [Games] (
+  [Game_ID] INT NOT NULL,
+  [GameName] VARCHAR(45) NULL,
+  [GameNick] VARCHAR(45) NULL,
+  PRIMARY KEY ([Game_ID]),
+  INDEX [GameAccount_ID_UNIQUE] ([Game_ID] ASC),
+  INDEX [GameNick_UNIQUE] ([GameNick] ASC))
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 -- -----------------------------------------------------
