@@ -49,7 +49,7 @@ CREATE TABLE [Users] (
 -- Podstawowa Tabela Ligi
 -- -----------------------------------------------------
 
-	CREATE TABLE [Leagues] (
+CREATE TABLE [Leagues] (
   [League_ID] INT NOT NULL,
   [LeagueName] VARCHAR(45) NOT NULL,
   [LeagueReferee] VARCHAR(45) NOT NULL,
